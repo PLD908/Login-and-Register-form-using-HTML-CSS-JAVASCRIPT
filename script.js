@@ -1,9 +1,6 @@
 var x = document.getElementById('sign-up')
   x.style.display = "none";
 
-// var x = document.getElementById('menu')
-//   x.style.display = "none";
-
 function signUp() {
    var x = document.getElementById('sign-up')
      x.style.display = "block";
