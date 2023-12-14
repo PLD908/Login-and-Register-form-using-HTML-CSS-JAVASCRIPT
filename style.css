@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&display=swap');
 *{
     box-sizing: border-box;
 }
@@ -6,6 +7,7 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+    font-family: 'Inter', sans-serif;
     width: 100%;
     height: 100vh;
     margin: 0;
@@ -26,13 +28,16 @@ li, a{
     color: white;
 }
 ul > li:hover{
-    text-decoration: underline papayawhip 2px;
-    transition: 0.5s ease;
+    text-decoration: underline rgb(211, 191, 158) 2px;
+    transition: 0.5s ease-in;
 }
-ul{
+#ourNav{
     display: flex;
     gap: 30px;
     padding: 0;
+}
+.dropdown{
+    display: none;
 }
 .inputSearch{
     position: relative;
@@ -47,6 +52,15 @@ input{
 }
 input::placeholder{
     color: white;
+}
+.welcome h1{
+    font-size: 38px;
+}
+.welcome span{
+    font-size: 18px;
+}
+.welcome p{
+    font-size: 13px;
 }
 .inputSearch .fa{
     position: absolute;
@@ -92,7 +106,7 @@ input::placeholder{
     justify-content: space-between;
     align-items: center;
     margin: 60px 0;
-     background-image: url(images/bg.webp); 
+    background-image: url(images/bg.webp);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed; 
@@ -103,6 +117,9 @@ input::placeholder{
 }
 .box-content{
     width: 40%;
+}
+.box-content p{
+    font-weight: bold;
 }
 #sign-in{
     text-align: center;
@@ -143,4 +160,114 @@ h1 span{
 .icons{
     margin: -10px;
     margin-top: 5px;
+    display: flex;
+}
+
+@media screen and (max-width: 770px) {
+    body{
+        height: 150vh;
+    }
+    .box-content{
+        width: 100%;
+        text-align: center;
+        padding: 20px;
+    }
+    #sign-in,#sign-up{
+            width: 100%;
+    }
+}
+@media screen and (max-width: 690px) {
+    li{
+        display: none;
+    }
+    .inputSearch input{
+        margin-left: -240px;
+    }
+
+    .dropdown{
+        display: block;
+        overflow: hidden;
+    }
+    .dropdown-content{
+        display: none;
+        position: absolute;
+        z-index: 1;
+        right: 40px;
+    }
+    .dropdown-content li, a{
+        padding: 3px 10px;
+        display: block;
+        margin-right: -20px;
+    }
+    .dropdown:hover .dropdown-content{
+        display: block;
+    }
+}
+@media screen and (max-width: 855px) {
+    body{
+        padding: 10px 30px 0 30px;
+    }
+    body{
+        height: 170vh;
+        padding: 10px 60px 0 60px;
+    }
+    .icons{
+        justify-content: center;
+    }
+}
+@media screen and (max-width: 640px) {
+    .inputSearch input{
+        margin-left: -150px;
+    }
+    body{
+        height: 155vh;
+        padding: 10px 60px 0 60px;
+    }
+}
+@media screen and (max-width: 480px) {
+    .inputSearch input{
+        margin-left: -68px;
+        width: 80%;
+    }
+    body{
+        height: 150vh;
+        padding: 10px 40px 0 40px;
+    }
+        .dropdown-content{
+        display: none;
+        position: absolute;
+        z-index: 1;
+        right: 30px;
+        top: 60px;
+    }
+    ul{
+        display: flex;
+    }
+    .dropdown-content li, a{
+        padding: 3px 12px;
+        margin-right: -20px;
+    }
+    .dropdown:hover .dropdown-content{
+        display: block;
+    }
+}
+@media screen and (max-width: 410px) {
+    .inputSearch input{
+        margin-left: -68px;
+        width: 80%;
+    }
+    body{
+        height: 150vh;
+        padding: 10px 20px 0 20px;
+    }
+}
+@media screen and (max-width: 360px) {
+    .inputSearch input{
+        margin-left: -68px;
+        width: 80%;
+    }
+    body{
+        height: 160vh;
+        padding: 10px 20px 0 20px;
+    }
 }

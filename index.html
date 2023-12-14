@@ -12,7 +12,7 @@
 <body>
     <nav>
         <div class="container">
-            <ul>
+            <ul id="ourNav">
                 <li><a href="#">Home</a></li>
                 <li><a href="#">About</a></li>
                 <li><a href="#">Service</a></li>
@@ -23,15 +23,28 @@
                 <input type="search" placeholder="Search..." />
                 <i class="fa fa-search"></i>
             </div>
+            <div class="dropdown">
+                <i class="fa fa-bars" id="menu"></i>
+                <div class="dropdown-content">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Service</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </nav>
 
     <div class="box">
         <div class="box-content">
             <h2>PrinceDivine.com</h2>
-            <h1>Welcome! <br><span>To our new website.</span></h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem animi minus quos iste veniam minima aliquam deserunt, rem ad harum.
-                Ut molestias expedita distinctio quos temporibus iusto, atque aspernatur fugiat!</p>
+            <div class="welcome">
+                <h1>Welcome! <br><span>To our new website.</span></h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem animi minus quos iste veniam minima aliquam deserunt, rem ad harum.
+                    Ut molestias expedita distinctio quos temporibus iusto, atque aspernatur fugiat!</p>
+            </div>
             <div class="icons">
                 <a href="#"><i class="fa fa-facebook" style="font-size:20px"></i></a>
                 <a href="#"><i class="fa fa-twitter" style="font-size:20px"></i></a>
@@ -87,8 +100,6 @@
                 <button type="button">Sign up</button>
                 <p>Already have an account? <span><a href="#" onclick="signIn()">Sign in</a></span></p>
             </div>
-
-            
         </form>
     </div>
 
