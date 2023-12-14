@@ -19,13 +19,3 @@ function signIn() {
      var y = document.getElementById('sign-up')
      y.style.display = "none";
 }
-
-function dropDown() {
-  var x = document.getElementById('ourNav').innerHTML;
-
-    if (x.style.display === "block") {
-        x.style.display = "block";
-    }else {
-        x.style.display = "none";
-    }
-}
