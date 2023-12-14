@@ -20,12 +20,12 @@ function signIn() {
      y.style.display = "none";
 }
 
-// function dropDown() {
-//   var x = document.getElementById('ourNav').innerHTML;
+function dropDown() {
+  var x = document.getElementById('ourNav').innerHTML;
 
-//     if (x.style.display === "block") {
-//         x.style.display = "block";
-//     }else {
-//         x.style.display = "none";
-//     }
-// }
+    if (x.style.display === "block") {
+        x.style.display = "block";
+    }else {
+        x.style.display = "none";
+    }
+}
